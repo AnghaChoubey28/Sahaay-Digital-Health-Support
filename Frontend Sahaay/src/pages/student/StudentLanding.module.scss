@@ -1,0 +1,170 @@
+.hero {
+  min-height: 100vh;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.navLink {
+  color: var(--text);
+  padding: 8px 12px;
+
+  &:hover {
+    background: var(--panel-2);
+  }
+}
+
+.signInBtn {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+/* Main */
+.mainContent {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.heroSection {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 16px 0;
+}
+
+/* Cards */
+.activityCard,
+.quoteCard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* Emotion buttons */
+.emotionBtn {
+  padding: 10px;
+  border-radius: 10px;
+
+  &:hover {
+    background: var(--panel-2);
+  }
+
+  &.active {
+    background: var(--panel-2);
+  }
+}
+
+.emotionLabel {
+  color: var(--text);
+}
+
+/* Buttons */
+.primaryBtn {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.secondaryBtn {
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  &:hover {
+    background: var(--panel-2);
+  }
+}
+
+/* Sections */
+.infoSection,
+.supportSection,
+.insightsSection {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Titles */
+.sectionTitle {
+  font-size: 24px;
+  text-align: center;
+  color: var(--text);
+}
+
+/* Cards inside sections */
+.supportCard,
+.featuresCard,
+.aboutCard,
+.insightsCard {
+  background: var(--panel-2);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  background: var(--panel);
+  padding: 24px;
+}
+
+.footerColumn a {
+  color: var(--muted);
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.footerBottom p {
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .headline {
+    font-size: 28px;
+  }
+
+  .mainContent {
+    padding: 16px;
+  }
+}

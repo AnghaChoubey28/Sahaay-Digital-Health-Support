@@ -1,0 +1,203 @@
+.wrap {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.heroContent {
+  position: relative;
+}
+
+.welcome {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+/* Status */
+.statusCard {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.statusItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statusLabel {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.statusValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background: var(--panel-2);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  h3 {
+    font-size: 18px;
+    color: var(--text);
+  }
+}
+
+.cardIcon {
+  font-size: 22px;
+}
+
+/* Actions */
+.actionGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actionBtn {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.2s ease;
+
+  &:hover {
+    background: var(--panel);
+  }
+}
+
+.crisisBtn {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #ef4444;
+  color: #fff;
+}
+
+.actionIcon {
+  font-size: 20px;
+}
+
+.actionTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.actionDesc {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Resources */
+.resourceItem {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+}
+
+.resourceTitle {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.resourceDesc {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.resourceLink {
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Progress */
+.progressStats {
+  display: flex;
+  gap: 16px;
+}
+
+.progressNumber {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.progressLabel {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 16px;
+  }
+
+  .welcome {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
