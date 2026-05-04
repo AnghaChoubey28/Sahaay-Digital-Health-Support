@@ -1,51 +1,56 @@
-# Sahaay - Digital Mental Health Platform
+*Sahaay – Digital Mental Health Platform
+Overview
 
-## About
+Sahaay is a student-focused mental health platform that brings together AI support, peer interaction, and professional counseling into a single system. It aims to make mental health assistance accessible, private, and easy to use within academic environments.
 
-Sahaay is designed to support students with accessible mental health tools, combining AI assistance, peer support, and professional counseling in one platform.
+*Core Features
+Student Dashboard
+A personalized space where users can track their mental well-being and access helpful resources.
+AI Assistant
+A 24/7 chatbot that provides basic emotional support, guidance, and multilingual interaction.
+Peer Support System
+An anonymous environment where students can share experiences and connect with others safely.
+Counseling Services
+Enables secure booking of sessions with certified mental health professionals.
+Assessment Tools
+Includes standard tools such as PHQ-9 and GAD-7 for self-evaluation.
+Admin Panel
+Provides system control, monitoring, and insights through detailed analytics.
+Mood Tracking
+Allows users to log emotions and receive simple insights over time.
+Analytics & Visualization
+Displays real-time data through charts and summaries for better understanding.
 
-## Features
+*Technology Used
+Frontend: React, Vite, SCSS, React Router
+Backend: Node.js, Express
+Database: MongoDB
+Authentication: JWT-based system
+AI Integration: Google Gemini API
 
-- **Student Dashboard**: Personalized mental health tracking and resources
-- **AI Companion**: 24/7 intelligent chatbot with multilingual support
-- **Peer Support**: Anonymous community chat and group sessions
-- **Professional Counseling**: Book appointments with licensed counselors
-- **Assessment Tools**: PHQ-9 and GAD-7 mental health assessments
-- **Admin Panel**: Comprehensive system management and analytics
-- **Mood Tracking**: Global mood context with personalized insights
-- **Data Visualization**: Real-time analytics and reporting
+ *Quick Start
 
-## Tech Stack
+**Frontend Setup
 
-- **Frontend**: React, Vite, SCSS, React Router
-- **Backend**: Node.js, Express, MongoDB, JWT
-- **AI Integration**: Google Gemini API
-- **Authentication**: JWT-based auth system
-- **Database**: MongoDB with comprehensive data models
-
-## Quick Start
-
-### Frontend Setup
-```bash
 cd Frontend
 npm install
 npm run dev
-```
 
-### Backend Setup
+
+** Backend Setup
 ```bash
 cd Backend
 npm install
 npm run dev
 ```
 
-### Database Setup
+** Database Setup
 ```bash
 cd Backend
-npm run seed  # Populate database with sample data
-```
+npm run seed
 
-## Environment Variables
+
+*Environment Variables
 
 Create a `.env` file in the Backend directory with:
 ```
@@ -53,82 +58,46 @@ JWT_SECRET=your_jwt_secret_here
 MONGO_URI=your_mongodb_connection_string
 GEMINI_API_KEY=your_gemini_api_key
 ```
+**Data Models
+User profiles for students, admins, and counselors
+Appointment scheduling system
+Feedback collection
+Chat session records
+Assessment data storage
+System logs
 
-## Database Models
 
-- **User**: Students, counselors, and admins
-- **Appointment**: Counseling session bookings
-- **Feedback**: Session ratings and comments
-- **ChatSession**: AI, peer, and counselor chat interactions
-- **Assessment**: PHQ-9 and GAD-7 mental health assessments
-- **SystemLog**: System activity and error tracking
+/***API Overview
+Authentication endpoints for login and registration
+Appointment booking and feedback submission
+AI chat handling
+Analytics endpoints for trends and system monitoring
 
-## API Endpoints
+**Demo Access
+Student: student@university.edu
+ / admin123
+Admin: admin / admin123
 
-### Authentication
-- `POST /api/auth/login` - User authentication
-- `POST /api/auth/register` - User registration
+**Admin Capabilities
+View key statistics and trends
+Manage users and sessions
+Monitor system performance
+Analyze feedback and activity
 
-### Appointments
-- `POST /api/appointments/book` - Book counseling appointment
 
-### Feedback
-- `POST /api/feedback/submit` - Submit session feedback
+**Application Routes
+/ Landing page
+/student/dashboard Student dashboard
+/student/assessment Assessments
+/student/support Support options
+/admin Admin login
+/admin/dashboard Admin analytics
 
-### AI Chat
-- `POST /api/ai/chat` - AI chat interaction
 
-### Analytics
-- `GET /api/analytics/overview` - Dashboard overview statistics
-- `GET /api/analytics/users/trends` - User registration trends
-- `GET /api/analytics/chat/analytics` - Chat session analytics
-- `GET /api/analytics/assessments/analytics` - Assessment analytics
-- `GET /api/analytics/appointments/analytics` - Appointment analytics
-- `GET /api/analytics/system/health` - System health metrics
-- `GET /api/analytics/activity/feed` - Real-time activity feed
+**Additional Notes
+Mobile-friendly design
+Secure authentication system
+Real-time updates in dashboard
+Clean and user-focused interface
 
-## Demo Credentials
-
-- **Student**: `student@university.edu` / `admin123`
-- **Admin**: `admin` / `admin123`
-
-## Data Visualization Features
-
-- **Real-time Metrics**: User counts, session statistics, ratings
-- **Interactive Charts**: Session types, mood distribution, severity levels
-- **Trend Analysis**: User growth, assessment patterns, appointment trends
-- **System Monitoring**: Error tracking, performance metrics, activity logs
-- **Satisfaction Tracking**: Star ratings and feedback analysis
-
-## Admin Dashboard Features
-
-- **Overview Statistics**: Key performance indicators
-- **User Management**: Student and counselor administration
-- **Case Monitoring**: Track counseling sessions and outcomes
-- **Reports & Analytics**: Comprehensive data visualization
-- **System Health**: Monitor system performance and errors
-- **Activity Feed**: Real-time system activity tracking
-
-## Key Routes
-
-- `/` - Student landing page
-- `/student/dashboard` - Student dashboard
-- `/student/assessment` - Mental health assessments
-- `/student/support` - Support options chooser
-- `/student/self-help`, `/student/peer`, `/student/counselor`, `/student/feedback`, `/student/crisis`
-- `/admin` - Admin login
-- `/admin/dashboard` - Admin dashboard with analytics
-
-## Notes
-
-- Header has a single Admin button that routes to admin login if logged out; after login it routes to admin dashboard
-- Status pills were removed from header and moved into the admin dashboard
-- Responsive design with mobile-first approach
-- Dark theme throughout the application
-- Real-time data visualization in admin panel
-
----
-
-**Sahaay**: An Application for Development of a Digital Mental Health and Psychological Support System for Students in Higher Education
-
-*By Team Code Monk(0)*
+Sahaay is built to encourage early support, reduce stigma, and provide students with reliable mental health resources in one place.
